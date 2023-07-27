@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="layoutDemo3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ejT-AD-EOy">
+                                <rect key="frame" x="20" y="99" width="353" height="561"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uaw-gM-qiy">
+                                        <rect key="frame" x="96" y="0.0" width="161" height="32.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YODA Ledger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCc-mr-m9j">
+                                                <rect key="frame" x="0.0" y="0.0" width="161" height="32.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                <color key="textColor" systemColor="systemBlueColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B30-8k-b6Q">
+                                        <rect key="frame" x="100" y="72.666666666666657" width="153" height="22.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRh-lk-Z5y">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="22.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="2qk-Kn-g3X">
+                                        <rect key="frame" x="20" y="135" width="313" height="345"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YAx-Fa-9Hj">
+                                                <rect key="frame" x="10" y="0.0" width="293" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-ts-18H" customClass="customTextField" customModule="layoutDemo3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="TLG-ZG-9uh"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="ahR-10-IkV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0ZE-ts-18H" secondAttribute="trailing" id="m2z-X9-euV"/>
+                                                    <constraint firstItem="0ZE-ts-18H" firstAttribute="leading" secondItem="YAx-Fa-9Hj" secondAttribute="leading" id="r4v-aP-iYj"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zwl-q1-KHt">
+                                                <rect key="frame" x="10" y="76" width="293" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJP-qs-usq" customClass="customTextField" customModule="layoutDemo3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="D6t-H4-Cy5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="pJP-qs-usq" secondAttribute="trailing" id="5TA-Do-6Yv"/>
+                                                    <constraint firstItem="pJP-qs-usq" firstAttribute="leading" secondItem="Zwl-q1-KHt" secondAttribute="leading" id="d0q-Tx-phw"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uqp-0m-i8y">
+                                                <rect key="frame" x="10" y="152" width="293" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Qw-iz-try" customClass="customTextField" customModule="layoutDemo3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="t8Z-Eq-ip1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="3Qw-iz-try" firstAttribute="leading" secondItem="uqp-0m-i8y" secondAttribute="leading" id="TQQ-5F-WeB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3Qw-iz-try" secondAttribute="trailing" id="kf0-dQ-KVb"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OcW-b3-Yfx">
+                                                <rect key="frame" x="10" y="228" width="293" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvN-gc-pAB" customClass="customTextField" customModule="layoutDemo3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="alD-YS-wAT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bvN-gc-pAB" firstAttribute="leading" secondItem="OcW-b3-Yfx" secondAttribute="leading" id="CPf-5u-7Xw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bvN-gc-pAB" secondAttribute="trailing" id="CiJ-7Q-tf2"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WN7-km-Yyz">
+                                                <rect key="frame" x="10" y="304" width="293" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYH-XS-Nqs" customClass="customTextField" customModule="layoutDemo3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="tvj-8S-8kg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="RYH-XS-Nqs" secondAttribute="trailing" id="1Vj-gC-zKi"/>
+                                                    <constraint firstItem="RYH-XS-Nqs" firstAttribute="leading" secondItem="WN7-km-Yyz" secondAttribute="leading" id="cXt-RK-vl0"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YAx-Fa-9Hj" secondAttribute="trailing" constant="10" id="8il-nC-lhZ"/>
+                                            <constraint firstItem="YAx-Fa-9Hj" firstAttribute="leading" secondItem="2qk-Kn-g3X" secondAttribute="leading" constant="10" id="Dbw-Iz-PRd"/>
+                                            <constraint firstAttribute="trailing" secondItem="WN7-km-Yyz" secondAttribute="trailing" constant="10" id="FgX-YW-dET"/>
+                                            <constraint firstAttribute="trailing" secondItem="YAx-Fa-9Hj" secondAttribute="trailing" constant="10" id="Plt-tS-ayd"/>
+                                            <constraint firstItem="YAx-Fa-9Hj" firstAttribute="leading" secondItem="2qk-Kn-g3X" secondAttribute="leading" constant="10" id="SGP-N0-GNL"/>
+                                            <constraint firstItem="uqp-0m-i8y" firstAttribute="leading" secondItem="2qk-Kn-g3X" secondAttribute="leading" constant="10" id="aPw-vj-kh3"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zwl-q1-KHt" secondAttribute="trailing" constant="10" id="cvp-YT-r4z"/>
+                                            <constraint firstItem="Zwl-q1-KHt" firstAttribute="leading" secondItem="2qk-Kn-g3X" secondAttribute="leading" constant="10" id="jcS-B6-yRi"/>
+                                            <constraint firstItem="WN7-km-Yyz" firstAttribute="leading" secondItem="2qk-Kn-g3X" secondAttribute="leading" constant="10" id="mcW-c7-tCj"/>
+                                            <constraint firstItem="OcW-b3-Yfx" firstAttribute="leading" secondItem="2qk-Kn-g3X" secondAttribute="leading" constant="10" id="r3T-TG-VXq"/>
+                                            <constraint firstAttribute="trailing" secondItem="OcW-b3-Yfx" secondAttribute="trailing" constant="10" id="tIr-lp-BQU"/>
+                                            <constraint firstAttribute="trailing" secondItem="uqp-0m-i8y" secondAttribute="trailing" constant="10" id="xjz-iF-Nvv"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-fa-j7W">
+                                        <rect key="frame" x="10" y="520" width="333" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru7-0d-PNR" customClass="signupButton" customModule="layoutDemo3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="41"/>
+                                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="Ca7-f7-KLt"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Sign up">
+                                                    <color key="titleColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2qk-Kn-g3X" secondAttribute="trailing" constant="20" id="9a0-7Z-zeJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uaw-gM-qiy" secondAttribute="trailing" constant="96" id="AOr-uk-asW"/>
+                                    <constraint firstItem="Uaw-gM-qiy" firstAttribute="top" secondItem="ejT-AD-EOy" secondAttribute="top" id="ATs-4U-UJ0"/>
+                                    <constraint firstItem="Uaw-gM-qiy" firstAttribute="leading" secondItem="ejT-AD-EOy" secondAttribute="leading" constant="96" id="MEs-1P-ZdI"/>
+                                    <constraint firstItem="2qk-Kn-g3X" firstAttribute="leading" secondItem="ejT-AD-EOy" secondAttribute="leading" constant="20" id="Xim-84-IR4"/>
+                                    <constraint firstItem="B30-8k-b6Q" firstAttribute="leading" secondItem="ejT-AD-EOy" secondAttribute="leading" constant="100" id="abL-YM-9yj"/>
+                                    <constraint firstItem="Hpp-fa-j7W" firstAttribute="leading" secondItem="ejT-AD-EOy" secondAttribute="leading" constant="10" id="el8-4S-swh"/>
+                                    <constraint firstAttribute="trailing" secondItem="B30-8k-b6Q" secondAttribute="trailing" constant="100" id="gir-iI-2mk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hpp-fa-j7W" secondAttribute="trailing" constant="10" id="y2D-wx-vEt"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3be-Yu-BLz">
+                                <rect key="frame" x="10" y="700" width="373" height="18.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Already have an account click here to sign in-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-uP-cvs">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="18.666666666666668"/>
+                                        <color key="tintColor" systemColor="systemGray3Color"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3be-Yu-BLz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6kK-32-7wB"/>
+                            <constraint firstItem="ejT-AD-EOy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BDW-Pz-XJ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ejT-AD-EOy" secondAttribute="trailing" constant="20" id="Myz-1X-Atz"/>
+                            <constraint firstItem="3be-Yu-BLz" firstAttribute="top" secondItem="ejT-AD-EOy" secondAttribute="bottom" constant="40" id="Qbo-bc-kye"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3be-Yu-BLz" secondAttribute="trailing" constant="10" id="eLX-ci-lse"/>
+                            <constraint firstItem="ejT-AD-EOy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hxa-4t-1Ga"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
